@@ -1,0 +1,274 @@
+.about-section {
+	text-align: left;
+	padding-top: 30px;
+	padding-left: 1%;
+}
+
+.about-section h1 {
+	color: #fff;
+	font-family: Poppins;
+	font-weight: 500;
+}
+
+.about-section p {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.content-primary {
+	width: 60px;
+	height: 2px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.about-inform {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.about-inform img {
+	width: 30%;
+	border-radius: 9px;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+}
+
+.about-information {
+	width: 70%;
+	padding-left: 15px;
+	background-color: black;
+	border-radius: 18px;
+	margin-left: 15px;
+	padding-top: 20px;
+	border: 1px solid #fff;
+}
+
+.about-information h2 {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: -10px;
+}
+
+.about-information p {
+	margin-top: 0;
+	color: #fff;
+}
+
+.full-information {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.inform-2 {
+	margin-left: 30px;
+}
+
+.par {
+	margin-top: 20px;
+}
+
+.self {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.about-icon {
+	color: #00abf0;
+}
+
+.self h3 {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.self h4 {
+	color: #949191;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.about-information p {
+	color: #fff;
+}
+.par {
+	margin-top: 50px;
+}
+
+/* skills*/
+
+.skills-inform {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.skills {
+	text-align: center;
+	width: 50%;
+	backdrop-filter: blur(20px);
+	padding: 20px 10px;
+	border-radius: 18px;
+}
+
+.skills h2 {
+	color: #fff;
+	font-weight: 500;
+	font-family: Poppins;
+}
+
+.skill-inform {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.skill-inform h3 {
+	color: #fff;
+	font-family: Poppins;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.skill-prosent {
+	height: 10px;
+	width: 100%;
+	background-color: #838282;
+	border-radius: 9px;
+}
+
+.skill-prosent .prosent {
+	height: 100%;
+	width: 95%;
+	background-color: #00abf0;
+	border-radius: 9px;
+}
+
+.prosent-css {
+	height: 100%;
+	width: 85%;
+	background-color: #00abf0;
+	border-radius: 9px;
+}
+
+.prosent-js {
+	height: 100%;
+	width: 80%;
+	background-color: #00abf0;
+	border-radius: 9px;
+}
+
+.prosent-react {
+	height: 100%;
+	width: 75%;
+	background-color: #00abf0;
+	border-radius: 9px;
+}
+
+/* additional inform */
+
+.additional-inform {
+	display: grid;
+	grid-template-columns: 0.2fr 1fr;
+}
+
+.experience {
+	width: 200px;
+	text-align: center;
+	background-color: #535252;
+	border-radius: 9px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-top: 25px;
+
+	margin-left: 25px;
+}
+
+.experience h4 {
+	color: #fff;
+	font-size: 20px;
+	font-family: Poppins;
+	font-weight: 500;
+}
+
+.inform-icon {
+	color: #00abf0;
+	font-size: 30px;
+}
+
+.experience h3 {
+	color: black;
+	font-size: 18px;
+	font-family: Poppins;
+	font-weight: 500;
+}
+
+@media (max-width: 767px) {
+	.about-inform {
+		display: block;
+	}
+
+	.about-inform img {
+		width: 100%;
+		height: 350px;
+	}
+
+	.about-information {
+		width: 100%;
+		padding-left: 5%;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.inform-1 {
+		margin-left: -5%;
+	}
+
+	.inform-2 {
+		margin-left: 10%;
+	}
+
+	.skills-inform {
+		display: block;
+	}
+
+	.skills {
+		width: 100%;
+	}
+
+	.additional-inform {
+		width: 100%;
+		padding: 0;
+		display: inline-block;
+	}
+
+	.experience {
+		display: inline-block;
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.full-information {
+		flex-direction: column;
+		margin-left: -5%;
+	}
+}

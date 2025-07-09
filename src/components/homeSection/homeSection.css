@@ -1,0 +1,156 @@
+.home-section {
+	display: flex;
+	align-items: center;
+	flex-direction: column-reverse;
+	padding: 70px 100px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+
+.home-section::-webkit-scrollbar {
+	display: none;
+}
+.home-inform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-inform h1 {
+	color: #fff;
+}
+.home-inform h2 {
+	color: #fff;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.myImg {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.myImg img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+}
+
+/* Loader 1 (chap tomonga aylanish) */
+.myImg::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 220px; /* Loaderning kengligi */
+	height: 220px; /* Loaderning balandligi */
+	border: 5px solid #040b14;
+	border-top: 5px solid #00abf0;
+	border-radius: 50%;
+	animation: spin-left 4s linear infinite;
+}
+
+/* Loader 2 (o‘ng tomonga aylanish) */
+.myImg::after {
+	content: '';
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 250px; /* Loaderning kengligi */
+	height: 250px; /* Loaderning balandligi */
+	border: 5px solid #040b14;
+	border-bottom: 5px solid #00abf0;
+	border-radius: 50%;
+	animation: spin-right 4s linear infinite;
+}
+
+/* Chap tomonga aylanish animatsiyasi */
+@keyframes spin-left {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+/* O‘ng tomonga aylanish animatsiyasi */
+@keyframes spin-right {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.btn-social {
+	display: flex;
+	align-items: center;
+}
+
+.btn-social a {
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+.btn-primary {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	border-radius: 9px;
+	background-color: #00abf0;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn-primary:hover {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #00abf0;
+}
+
+.phone-icon {
+	width: 50px;
+	height: 50px;
+}
+
+@media (max-width: 767px) {
+	.home-section {
+		flex-direction: column-reverse;
+	}
+
+	.myImg {
+		margin-bottom: 100px;
+		width: 300px;
+		height: 300px;
+	}
+
+	.myImg img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.myImg::before {
+		width: 320px;
+		height: 320px;
+		top: -15px;
+		left: -15px;
+	}
+
+	.myImg::after {
+		width: 340px;
+		height: 340px;
+		top: -25px;
+		left: -25px;
+	}
+}

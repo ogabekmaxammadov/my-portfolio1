@@ -1,0 +1,266 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* flag icons uchun */
+@import 'flag-icons/css/flag-icons.min.css';
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Base styles */
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+	background-color: #0d1117;
+	/* color: #000000; */
+}
+
+/* html.dark body {
+	background-color: #0d1117;
+	color: #e0e0e0;
+} */
+
+#root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-green: #112e42;
+	--color-dark-blue: #081b29;
+	--color-aqua: #00abf0;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* Layout helpers */
+.display {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.display-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+/* Font sizes */
+.font-size-20 {
+	font-size: 20px;
+}
+.font-size-25 {
+	font-size: 25px;
+}
+.font-size-30 {
+	font-size: 30px;
+}
+.font-size-35 {
+	font-size: 35px;
+}
+.font-size-40 {
+	font-size: 40px;
+}
+.font-size-45 {
+	font-size: 45px;
+}
+.font-size-50 {
+	font-size: 50px;
+}
+
+/* Container */
+.container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	max-width: 100%;
+	margin: auto;
+}
+
+/* Main content */
+.bodyy {
+	height: 95vh;
+	width: 73%;
+	margin-left: 25%;
+	margin-top: 2.5vh;
+	border: 1px solid #928f8f;
+	border-radius: 9px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 15px;
+	position: fixed;
+	background-color: #040b14;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bodyy::-webkit-scrollbar {
+	display: none;
+}
+
+/* html.dark .bodyy {
+	background-color: #040b14;
+	color: #e0e0e0;
+} */
+
+/* Buttons */
+.btn-secondary {
+	padding: 15px 35px;
+	color: #00abf0;
+	border: 1px solid #00abf0;
+	background-color: transparent;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 9px;
+	transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+	background-color: #00abf0;
+	color: black;
+}
+
+/* Icons */
+.menu-icon {
+	color: #fff;
+	font-size: 50px;
+	margin-left: 80%;
+	display: none;
+}
+
+.moon {
+	color: #000;
+	font-size: 30px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+	display: none;
+}
+
+html.dark .moon {
+	color: #fff;
+}
+
+/* Loader */
+.fi-loader {
+	font-size: 60px;
+	color: #00abf0;
+	animation: spin 2s linear infinite;
+	position: fixed;
+	margin-top: 250px;
+	margin-left: -40px;
+	background-color: transparent;
+}
+
+/* Borders */
+.border-red {
+	border: 1px solid red;
+}
+
+.border-green {
+	border: 1px solid #00abf0;
+}
+
+/* language btns */
+
+.lngs {
+	display: flex;
+	gap: 10px;
+	text-align: right;
+	margin-left: 80%;
+}
+
+.lngs button {
+	background-color: black;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+.lngs button.active {
+	background-color: #00abf0;
+	color: #fff;
+}
+
+/* Spinner animation */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+	.bodyy {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+		height: 100vh;
+		border: none;
+	}
+
+	.container {
+		display: block;
+	}
+
+	.menu-icon {
+		display: inline-block;
+	}
+
+	.fi-loader {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-left: 45%;
+		margin-top: 40vh;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.header.open {
+		display: flex;
+		z-index: 3000;
+	}
+
+	.lngs {
+		margin-left: 0;
+		margin-top: -45px;
+	}
+
+	.moon {
+		position: relative;
+		top: -55px;
+		background-color: black;
+		width: 50px;
+		height: 50px;
+		padding: 8px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+	}
+}
